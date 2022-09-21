@@ -22,7 +22,7 @@ function checksExistsUserAccount(request, response, next) {
 }
 
 function checksCreateTodosUserAvailability(request, response, next) {
-  const { user } = request
+  const { user } = request;
   
   if(user.pro){
     return next();
